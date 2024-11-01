@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* Base Options*/
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+
+    /* Strictness*/
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+
+    /* Bundled*/
+    "lib": ["dom", "dom.iterable", "ES2022"],
+
+    "noEmit": true,
+
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    "jsx": "preserve",
+    "incremental": true,
+
+    /* Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["../react_components/*"],
+    }
+  },
+  "include": [
+    "../react_components/**/*.ts",
+    "../react_components/**/*.tsx",
+    ".eslintrc.json",  
+    "webpack.dev.config.ts",
+  ],
+  "exclude": [
+    "node_modules/",  
+  ]
+}

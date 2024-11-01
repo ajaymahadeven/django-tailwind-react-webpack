@@ -9,7 +9,9 @@ dj_tailwind_react/__pycache__/*
 # Docker
 pgdata/
 
-# Tailwind
-app/theme/static/css/dist/styles.css
-app/theme/__pycache__/
-app/theme/migrations/__pycache__/
+
+# Custom App = test_app
+test_app/__pycache__/*
+test_app/static_src/node_modules/
+test_app/management/commands/__pycache__/*
+test_app/management/__pycache__/*
