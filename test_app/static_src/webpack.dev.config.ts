@@ -8,6 +8,7 @@ const buildDirectory = "../static/compiled/";
 
 interface ExtendedConfiguration extends Configuration {
   devServer?: {
+     port?: number;
     static: {
       directory: string;
     };
@@ -27,6 +28,7 @@ const config: ExtendedConfiguration = {
   },
   mode: "development",
   devServer: {
+    port: 3000,
     static: {
       directory: path.join(__dirname, buildDirectory),
     },

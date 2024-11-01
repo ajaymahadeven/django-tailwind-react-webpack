@@ -15,3 +15,4 @@ test_app/__pycache__/*
 test_app/static_src/node_modules/
 test_app/management/commands/__pycache__/*
 test_app/management/__pycache__/*
+test_app/static/compiled/*.js
