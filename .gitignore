@@ -1,1 +1,15 @@
-/.venv
+# General
+.env
+
+# Django & Python
+.venv/
+dj_tailwind_react/__pycache__/*
+
+
+# Docker
+pgdata/
+
+# Tailwind
+app/theme/static/css/dist/styles.css
+app/theme/__pycache__/
+app/theme/migrations/__pycache__/
