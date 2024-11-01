@@ -1,8 +1,5 @@
 Django>=4.0,<5.0
 django-browser-reload==1.15.0
 django-tailwind==3.8.0
-pandas==2.1.4
-plotly==5.23.0
 python-dotenv==1.0.1
 psycopg2-binary==2.9.9
-python-dotenv==1.0.1 

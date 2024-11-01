@@ -29,12 +29,14 @@ SECRET_KEY = 'django-insecure-n2lv_h+cz*#pu1+p)7rpxjsj4d7)h&391!6^^%d1k57mx=gond
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["0.0.0.0", "localhost"]
+ALLOWED_HOSTS = ["0.0.0.0", "localhost" ,".vercel.app","127.0.0.1"]
 
 
 # Application definition
 
 TAILWIND_APP_NAME = 'test_app'
+
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
