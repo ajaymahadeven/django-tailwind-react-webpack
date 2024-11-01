@@ -28,13 +28,11 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["../react_components/*"],
+      "@/*": ["react/*"],
     }
   },
   "include": [
-    "../react_components/**/*.ts",
-    "../react_components/**/*.tsx",
-    ".eslintrc.json",  
+    "react/**/*",
     "webpack.dev.config.ts",
   ],
   "exclude": [

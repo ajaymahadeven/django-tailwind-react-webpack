@@ -3,8 +3,8 @@ import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import path from "path";
 import webpack, { type Configuration } from "webpack";
 
-const buildDirectory = "../../public/compiled";
-const reactComponentDirectory = "../react_components";
+const buildDirectory = "../static/compiled/";
+
 
 interface ExtendedConfiguration extends Configuration {
   devServer?: {
@@ -19,7 +19,7 @@ interface ExtendedConfiguration extends Configuration {
 
 const config: ExtendedConfiguration = {
   entry: {
-    react:['../react_components/page/react.tsx'],
+    index:['./react/app/page.tsx'],
   },
   output: {
     path: path.join(__dirname, buildDirectory),

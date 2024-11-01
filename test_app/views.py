@@ -16,3 +16,7 @@ logger = logging.getLogger(__name__)
 # Index Page
 class Index(TemplateView):
     template_name = "base.html"
+
+
+class ReactExample(TemplateView):
+    template_name = "index.html"    

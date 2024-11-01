@@ -4,6 +4,8 @@
   "description": "",
   "scripts": {
     "start": "npm run dev",
+    "react": "npm-run-all -p start webpack-dev",
+    "webpack-dev": "webpack serve --config webpack.dev.config.ts --mode development",
     "build": "npm run build:clean && npm run build:tailwind",
     "build:clean": "rimraf ../static/css/dist",
     "build:tailwind": "cross-env NODE_ENV=production tailwindcss --postcss -i ./src/styles.css -o ../static/css/dist/styles.css --minify",
@@ -14,6 +16,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "terser-webpack-plugin": "^5.3.10"
   },
   "devDependencies": {
@@ -38,8 +42,8 @@
     "@types/eslint__js": "^8.42.3",
     "@types/mini-css-extract-plugin": "^2.5.0",
     "@types/node": "^22.8.6",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@types/terser-webpack-plugin": "^5.0.4",
     "@types/webpack": "^5.28.5",
     "@types/webpack-bundle-analyzer": "^4.7.0",

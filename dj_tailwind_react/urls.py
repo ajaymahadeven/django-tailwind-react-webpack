@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("__reload__/", include("django_browser_reload.urls")),
     path("", test_app_views.Index.as_view(), name="index"),
+    path("react/", test_app_views.ReactExample.as_view(), name="react"),
 ]

@@ -1,20 +1,19 @@
+import os
 import subprocess
+from django.conf import settings
 from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
-    help = "Runs Tailwind and React development servers together."
+    help = "Runs the development scripts defined in package.json."
 
     def handle(self, *args, **kwargs):
-        # Start Tailwind in watch mode
-        tailwind_process = subprocess.Popen(['python', 'manage.py', 'tailwind', 'start'])
-    
-
+        # Path to the static_src directory
+        static_src_path = os.path.join(settings.BASE_DIR, 'test_app', 'static_src')
         try:
-            tailwind_process.wait()
-    
-        except KeyboardInterrupt:
-            tailwind_process.terminate()
-        
-        finally:
-            tailwind_process.kill()
- 
+            # Run the npm script defined in package.json
+            subprocess.check_call(['npm', 'run', 'react'], cwd=static_src_path)
+            self.stdout.write(self.style.SUCCESS('Successfully ran the development scripts.'))
+        except subprocess.CalledProcessError as e:
+            self.stdout.write(self.style.ERROR(f"An error occurred while running npm scripts: {e}"))
+        except FileNotFoundError as fnf_error:
+            self.stdout.write(self.style.ERROR(f"FileNotFoundError: {fnf_error}"))
