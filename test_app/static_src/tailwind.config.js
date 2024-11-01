@@ -46,7 +46,7 @@ module.exports = {
          * 
          * 
        */
-        '../react_components/**/*.tsx',
+        '../react/**/*.tsx',
     ],
     theme: {
         extend: {},
