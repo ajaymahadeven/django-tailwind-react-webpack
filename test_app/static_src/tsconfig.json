@@ -34,6 +34,7 @@
   "include": [
     "react/**/*",
     "webpack.dev.config.ts",
+    "webpack.production.config.ts",
   ],
   "exclude": [
     "node_modules/",  

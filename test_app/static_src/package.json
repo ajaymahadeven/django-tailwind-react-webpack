@@ -5,6 +5,8 @@
   "scripts": {
     "start": "npm run dev",
     "react": "npm-run-all -p start webpack-dev",
+    "prod": "npm-run-all -p build webpack-prod",
+    "webpack-prod":"webpack --config webpack.production.config.ts --mode production",
     "webpack-dev": "webpack serve --config webpack.dev.config.ts --mode development",
     "build": "npm run build:clean && npm run build:tailwind",
     "build:clean": "rimraf ../static/css/dist",
