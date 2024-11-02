@@ -112,7 +112,7 @@ Once the servers are running, you can access the application at `http://localhos
 
 ## How It Was Built
 
-For a detailed setup guide, refer to `INSTALLATION.md`.
+For a detailed setup guide, refer to `LEARN.md`.
 
 ---
 
