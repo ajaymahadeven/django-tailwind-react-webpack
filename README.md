@@ -14,6 +14,20 @@ The repository includes the minimal setup needed to run the project. Although it
 
 ---
 
+## Screenshots
+
+### Home Page
+
+![Home Page]()
+This screenshot provides a glimpse of the home page, which serves as a static Django template supported by the React DevTools extension.
+
+
+### React Page
+![React Page]()
+This screenshot provides a glimpse of the React page, which serves as a Django template with a React component embedded within it.
+
+---
+
 ## Features
 
 - **Django**: Handles server-side logic, routing, and database interactions.
