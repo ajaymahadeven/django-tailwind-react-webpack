@@ -1,8 +1,5 @@
 # Django + Tailwind CSS + React
 
-Django + Tailwind CSS + React = 🧡
-
-## Note :
 This project is not a typical two-folder setup with separate frontend and backend directories, nor does it run on two ports. Instead, it is designed to serve React components directly through Django templates, with everything running on a single Django server. This integrated approach allows Django to handle routing, template rendering, and serving static files, while React components are embedded within Django templates as needed.
 
 ## Project Overview
