@@ -2,7 +2,8 @@
 
 Django + Tailwind CSS + React = 🧡
 
----
+## Note :
+This project is not a typical two-folder setup with separate frontend and backend directories, nor does it run on two ports. Instead, it is designed to serve React components directly through Django templates, with everything running on a single Django server. This integrated approach allows Django to handle routing, template rendering, and serving static files, while React components are embedded within Django templates as needed.
 
 ## Project Overview
 
@@ -11,6 +12,14 @@ This project is more than just a boilerplate for integrating React, Django, and 
 Based on [Timonweb's Django Tailwind](https://github.com/timonweb/django-tailwind), this setup combines Django—a high-level Python web framework—with Tailwind CSS for rapid UI development and React for building dynamic user interfaces. Together, they provide a foundation for a modern, full-stack web application leveraging both backend and frontend capabilities.
 
 The repository includes the minimal setup needed to run the project. Although it wasn’t initially intended as a boilerplate, feel free to adapt it or reverse-engineer any part to meet your needs.
+
+---
+
+##  Advantages of This Setup
+- **Unified Application Flow**: Running on a single server simplifies deployment and avoids the complexity of managing two separate servers for backend and frontend.
+- **Seamless Integration**: React components are embedded within Django templates, enabling Django to handle routing while maintaining the flexibility of a dynamic frontend where needed.
+- **Easier Deployment**: With only one server to deploy, you can avoid configuring additional proxies (e.g., Nginx or Apache) to route traffic between frontend and backend servers.
+- **Efficient Development**: All assets are managed within Django, reducing the overhead of configuring a standalone frontend framework.
 
 ---
 
