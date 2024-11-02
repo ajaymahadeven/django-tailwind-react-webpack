@@ -18,12 +18,12 @@ The repository includes the minimal setup needed to run the project. Although it
 
 ### Home Page
 
-![Home Page]()
+![Home Page](https://github.com/thenameisajay/django-tailwind-react/blob/main/screenshots/home.png)
 This screenshot provides a glimpse of the home page, which serves as a static Django template supported by the React DevTools extension.
 
 
 ### React Page
-![React Page]()
+![React Page](https://github.com/thenameisajay/django-tailwind-react/blob/main/screenshots/react.png)
 This screenshot provides a glimpse of the React page, which serves as a Django template with a React component embedded within it.
 
 ---
