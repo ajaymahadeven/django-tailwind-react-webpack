@@ -46,7 +46,7 @@ To integrate React within the existing Django-Tailwind setup, I identified the f
 
 5. **Package Management**:
    - The `package.json` file was modified to add new scripts:
-     - Developers can run either a Tailwind watch (`npm run tailwind`) or both Tailwind and Webpack development servers.
+     - Developers can run  Tailwind watch (`python manage.py start`) mode or both Tailwind and Webpack development (`python manage.py dev`) servers.
 
 6. **Production Build**:
    - I updated scripts to handle production builds by adjusting the commands in `package.json` and adding a `webpack.production.config.ts` for optimized output.
@@ -55,10 +55,11 @@ To integrate React within the existing Django-Tailwind setup, I identified the f
 
 To simplify the setup and make the process more intuitive for developers unfamiliar with npm commands, I added several custom Django commands:
 
-- **`python manage.py dev`**: Runs both the Webpack server (React) and Django server simultaneously.
+- **`python manage.py dev`**: Runs the Webpack server (React), and Tailwind Watch Mode simultaneously.
+- - **`python manage.py start`**: Runs only Taiwind watch mode (ideal for developing only template pages).
 - **`python manage.py prod`**: Builds the production-ready assets.
-- **`python manage.py install`**: Installs the required packages.
+- **`python manage.py install`**: Installs the required packages (npm).
 
 ### Disclaimer
 
-This repository is experimental, created to meet specific parameters and requirements. While this solution is functional, I am open to feedback and suggestions for improvement.
+This repository is experimental, and created to meet specific parameters and requirements. While this solution is functional, I am open to feedback and suggestions for improvement.
