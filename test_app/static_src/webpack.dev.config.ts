@@ -5,10 +5,9 @@ import webpack, { type Configuration } from "webpack";
 
 const buildDirectory = "../static/compiled/";
 
-
 interface ExtendedConfiguration extends Configuration {
   devServer?: {
-     port?: number;
+    port?: number;
     static: {
       directory: string;
     };
@@ -20,7 +19,7 @@ interface ExtendedConfiguration extends Configuration {
 
 const config: ExtendedConfiguration = {
   entry: {
-    index:['./react/app/page.tsx'],
+     index:['./react/app/page.tsx'],
   },
   output: {
     path: path.join(__dirname, buildDirectory),
@@ -78,13 +77,14 @@ const config: ExtendedConfiguration = {
       verbose: true,
       dry: false,
     }),
-    new ReactRefreshWebpackPlugin(), // Add React Refresh Plugin
-    new webpack.HotModuleReplacementPlugin(), // Add Hot Module Replacement Plugin
+    new ReactRefreshWebpackPlugin(),
   ],
   watchOptions: {
-    aggregateTimeout: 100,
-    poll: 1000,
+    aggregateTimeout: 50,
     ignored: /node_modules/,
+  },
+  cache: {
+    type: "filesystem",
   },
 };
 
