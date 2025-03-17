@@ -1,6 +1,6 @@
 Django>=4.0,<5.0
-django-browser-reload==1.15.0
-django-tailwind==3.4.0
+django-browser-reload==1.18.0 # Above Python v3.10
+django-tailwind==3.8.0 # Above Python v3.10
 python-dotenv==1.0.1
-psycopg2-binary==2.9.9
-whitenoise==6.7.0
+psycopg2-binary==2.9.10
+whitenoise==6.9.0 # Above Python v3.10
